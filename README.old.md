@@ -22,3 +22,9 @@ tailwind.css:
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
 then change in tailwind.js them change in index.css
+
+import react slick
+import axios
+import headleass ui
+import react icons
+import browser router
