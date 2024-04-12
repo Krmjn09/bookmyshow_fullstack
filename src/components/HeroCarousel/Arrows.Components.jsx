@@ -1,6 +1,6 @@
 import React from "react";
 
-const NextArrow = (props) => {
+export function NextArrow(props) {
   return (
     <>
       <div
@@ -10,9 +10,9 @@ const NextArrow = (props) => {
       ></div>
     </>
   );
-};
+}
 
-const PrevArrow = (props) => {
+export function PrevArrow(props) {
   return (
     <>
       <div
@@ -22,5 +22,4 @@ const PrevArrow = (props) => {
       ></div>
     </>
   );
-};
-export { NextArrow, PrevArrow };
+}

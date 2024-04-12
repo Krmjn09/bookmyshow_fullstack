@@ -1,6 +1,6 @@
 import React from "react";
 import { BiChevronDown, BiMenu, BiSearch } from "react-icons/bi";
-import { IconName } from "react-icons/bi";
+
 function NavSm() {
   return (
     <>
@@ -22,13 +22,18 @@ function NavSm() {
 
 function NavMd() {
   return (
-    <div className="w-full flex items-center gap-3 bg-white px-3 py-1 rounded-md">
-      <BiSearch />
-      <input
-        type="search"
-        className="w-full bg-transparent border-none focus:outline-none"
-      />
-    </div>
+    <>
+      <div className="w-10 h-10">
+        <img src="" alt="logo" className="w-full h-full" />
+      </div>
+      <div className="w-full flex items-center gap-3 bg-white px-3 py-1 rounded-md">
+        <BiSearch />
+        <input
+          type="search"
+          className="w-full bg-transparent border-none focus:outline-none"
+        />
+      </div>
+    </>
   );
 }
 
@@ -58,15 +63,19 @@ function NavLg() {
 const Navbar = () => {
   return (
     <nav className="bg-darkBackground-700 px-4 py-3">
-      {/* Mobile Screen */}
+      {/* Small Screen NavBar */}
+      {/* >= md its hidden, only visible on small screen size */}
       <div className="md:hidden">
+        {/* <div className="sm:flex md:hidden lg:hidden"> */}
         <NavSm />
       </div>
-      {/* Tab Screen size */}
+
+      {/* Medium Screen Size */}
       <div className="hidden md:flex lg:hidden">
         <NavMd />
       </div>
-      {/* large screen size */}
+
+      {/* Large Screen Size */}
       <div className="hidden md:hidden lg:flex">
         <NavLg />
       </div>
