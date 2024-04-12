@@ -1,7 +1,7 @@
 import React from "react";
 
-const PosterSliderComponent = () => {
-  return <div>PosterSliderComponent</div>;
+const PosterSlider = () => {
+  return <div>PosterSlider</div>;
 };
 
-export default PosterSliderComponent;
+export default PosterSlider;
