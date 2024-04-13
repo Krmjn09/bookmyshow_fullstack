@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 // Layout HOC
 import DefaultLayoutHoc from "../layout/Default.layout";
 import EntertainmentCardSlider from "../components/Entertaiment/EntertainmentCard.Component"; // Corrected import
@@ -11,6 +11,16 @@ const HomePage = () => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
   const [premierMovies, setPremierMovies] = useState([]);
   const [onlineStreamEvents, setOnlineStreamEvents] = useState([]);
+
+  useEffect(() => {
+    const requestTopRatedMovies = async () => {
+      const getTopRatedMovies = await axios.get(
+        "https://api.themoviedb.org/3/movie/top_rated?api_key=f5a44c608eee19a76fa8f7b115fab539"
+      );
+      setRecommendedMovies(getTopRatedMovies.data.results);
+    };
+    requestTopRatedMovies();
+  },[]);
 
   return (
     <>
