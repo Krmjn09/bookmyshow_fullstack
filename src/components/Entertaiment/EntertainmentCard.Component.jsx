@@ -1,38 +1,35 @@
 import React from "react";
 import Slider from "react-slick";
+
 const EntertainmentCard = (props) => {
   return (
     <>
       <div>
         <img
           className="w-full h-full rounded-lg"
-          src="{props.src}"
+          src={props.src}
           alt="entertainment"
         />
       </div>
     </>
   );
 };
+
 const EntertainmentCardSlider = () => {
   const EntertainmentImage = [
-    
-   
-    "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNCBBcHI%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00391835-szaruyrhjv-portrait.jpg",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTI1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MjArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/kids-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NDArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/comedy-shows-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NSBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/music-shows-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/esports-collection-202011150107.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-OSBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/self-improvement-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300/cooking-collection-202007222211.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MSBFdmVudA%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/interactive-games-collection-202012041129.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/art-and-crafts-collection-202007220710.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/theatre-shows-collection-202012041128.png",
-    "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300/adventure-collection-202010140844.png",
+    "https://as2.ftcdn.net/v2/jpg/02/11/59/73/1000_F_211597360_OvTmwbOK25Fux93ug9cltVhszGoefxFt.jpg",
+    "https://as1.ftcdn.net/v2/jpg/04/55/86/78/1000_F_455867820_kZprBo3MtTCHy0dqgS3fhwHkFkNi8xUl.jpg",
+    "https://img.freepik.com/free-photo/caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light_155003-32526.jpg?t=st=1712990705~exp=1712994305~hmac=d8e528d07a2787f7920832b51c1b6569966c966740fbbe292f8f2c11e45d82ec&w=1060",
+    "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    "https://img.freepik.com/free-photo/kids-having-fun-outdoors_1098-3977.jpg?t=st=1712990663~exp=1712994263~hmac=df7fb69b6a3eeceef15ea376f6d1d8b3d131cdc47579204a3583942c4106b483&w=1060",
+    "https://img.freepik.com/free-photo/cinema-ticket-near-popcorns-against-blue-background_23-2148188111.jpg?t=st=1712990067~exp=1712993667~hmac=df50ec280560443d42d0871fd5d02317d72aca499d6125cde467a6d699d1eaae&w=1060",
+    "https://img.freepik.com/free-photo/crazy-dancing-moving-having-fun-young-happy-man-woman-casual-clothes-pink-blue-bicolored-wall-concept-human-emotions-facial-expession-relations-ad-beautiful-couple_155003-40119.jpg?t=st=1712990153~exp=1712993753~hmac=7cdb2d93cf1afcad38217ded8d30a57d0faa45330707995d7558acdaa1c72326&w=1060",
+    "https://img.freepik.com/free-photo/medium-shot-happy-young-people-partying_23-2149646121.jpg?t=st=1712990222~exp=1712993822~hmac=df5512283121c17356b8fe62a8e80ed7ea68d5a060ea277c9b500a5e1f70db0a&w=1060",
+    "https://img.freepik.com/free-photo/clapperboard-popcorn-film-stripe-cinema-tickets-wooden-desk_23-2148188189.jpg?t=st=1712989851~exp=1712993451~hmac=02d1531caf6828a4e04b423b7d6be3e096696ce656ebca42a68c15f9ad176d9e&w=1060",
   ];
 
   const settings = {
-    infinite: false,
+    infinite: true,
     slidesToShow: 5,
     slidesToScroll: 4,
     initialSlide: 0,
@@ -73,4 +70,5 @@ const EntertainmentCardSlider = () => {
     </>
   );
 };
+
 export default EntertainmentCardSlider;
