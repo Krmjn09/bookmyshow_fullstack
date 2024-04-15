@@ -60,7 +60,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3">
           <div className="hidden md:flex">
             <img src="" alt="Rupay" className="w-full h-full" />
-          </div>
+              </div>
           <PosterSlider
             title="Premiers"
             subtitle="Brand new releases every Friday"
