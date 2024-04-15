@@ -18,7 +18,7 @@ const Poster = (props) => {
         >
           {props.title}
         </h3>
-        <p className="text-sm md:text-md">{props.overview}</p>
+        {/* <p className="text-sm md:text-md">{props.overview}</p> */}
       </div>
     </Link>
   );
