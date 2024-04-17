@@ -12,20 +12,21 @@ const HomePage = () => {
   const [premierMovies, setPremierMovies] = useState([]);
   const [onlineStreamEvents, setOnlineStreamEvents] = useState([]);
 
-  useEffect(() => {
-    const requestTopRatedMovies = async () => {
-      const getTopRatedMovies = await axios.get("/movie/top_rated");
-      setRecommendedMovies(getTopRatedMovies.data.results);
-    };
-    requestTopRatedMovies();
-  }, []);
-
+  // get.apiName('/', async ()=>{})
   useEffect(() => {
     const requestPopularMovies = async () => {
       const getPopularMovies = await axios.get("/movie/popular");
       setPremierMovies(getPopularMovies.data.results);
     };
     requestPopularMovies();
+  }, []);
+
+  useEffect(() => {
+    const requestTopRatedMovies = async () => {
+      const getTopRatedMovies = await axios.get("/movie/top_rated");
+      setRecommendedMovies(getTopRatedMovies.data.results);
+    };
+    requestTopRatedMovies();
   }, []);
 
   useEffect(() => {
@@ -59,7 +60,11 @@ const HomePage = () => {
       <div className="bg-premier-800 py-12">
         <div className="container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3">
           <div className="hidden md:flex">
-            <img src="" alt="Rupay" className="w-full h-full" />
+            <img
+              src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-rupay-banner-web-collection-202104230555.png"
+              alt="Rupay"
+              className="w-full h-full"
+            />
           </div>
           <PosterSlider
             title="Premiers"

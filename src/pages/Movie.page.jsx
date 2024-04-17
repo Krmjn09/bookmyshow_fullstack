@@ -19,14 +19,6 @@ const MoviePage = () => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
 
   useEffect(() => {
-    const requestMovie = async () => {
-      const getMovieDate = await axios.get(`/movie/${id}`);
-      setMovie(getMovieDate.data);
-    };
-    requestMovie();
-  }, [id]);
-
-  useEffect(() => {
     const requestCast = async () => {
       const getCast = await axios.get(`/movie/${id}/credits`);
       setCast(getCast.data.cast);
@@ -50,6 +42,14 @@ const MoviePage = () => {
       setRecommendedMovies(getRecommendedMovies.data.results);
     };
     requestRecommededMovies();
+  }, [id]);
+
+  useEffect(() => {
+    const requestMovie = async () => {
+      const getMovieDate = await axios.get(`/movie/${id}`);
+      setMovie(getMovieDate.data);
+    };
+    requestMovie();
   }, [id]);
 
   const settingsCast = {
@@ -95,8 +95,8 @@ const MoviePage = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 4,
         },
       },
       {
@@ -195,8 +195,8 @@ const MoviePage = () => {
             {cast.map((castData) => (
               <Cast
                 image={castData.profile_path}
-                castName={movie.original_name}
-                role={movie.character}
+                castName={castData.original_name}
+                role={castData.character}
               />
             ))}
           </Slider>
