@@ -4,7 +4,7 @@ import Slider from "react-slick";
 const EntertainmentCard = (props) => {
   return (
     <>
-      <div>
+      <div className="w-full h-30 px-2">
         <img
           className="w-full h-full rounded-lg"
           src={props.src}

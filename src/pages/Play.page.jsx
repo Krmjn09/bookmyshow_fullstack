@@ -15,7 +15,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
+                src="https://img.freepik.com/free-photo/kids-having-fun-outdoors_1098-3977.jpg?t=st=1712990663~exp=1712994263~hmac=df7fb69b6a3eeceef15ea376f6d1d8b3d131cdc47579204a3583942c4106b483&w=1060"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -23,7 +23,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-suhani-shah-kahaani-india-tour-0-2022-8-29-t-12-36-14.jpg"
+                src="https://img.freepik.com/free-photo/kids-having-fun-outdoors_1098-3977.jpg?t=st=1712990663~exp=1712994263~hmac=df7fb69b6a3eeceef15ea376f6d1d8b3d131cdc47579204a3583942c4106b483&w=1060"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -31,7 +31,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-daddy-kool-by-atul-khatri-0-2022-8-16-t-10-37-17.jpg"
+                src="https://img.freepik.com/free-photo/kids-having-fun-outdoors_1098-3977.jpg?t=st=1712990663~exp=1712994263~hmac=df7fb69b6a3eeceef15ea376f6d1d8b3d131cdc47579204a3583942c4106b483&w=1060"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -39,23 +39,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-sunburn-arena-ft-dj-snake-delhi-ncr-0-2022-8-19-t-11-31-17.jpg"
-                title="So Rude of Me By Sweets"
-                subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
-              />
-            </div>
-            <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
-              <Poster
-                isPlay={true}
-                src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
-                title="So Rude of Me By Sweets"
-                subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
-              />
-            </div>
-            <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
-              <Poster
-                isPlay={true}
-                src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
+                src="https://img.freepik.com/free-photo/kids-having-fun-outdoors_1098-3977.jpg?t=st=1712990663~exp=1712994263~hmac=df7fb69b6a3eeceef15ea376f6d1d8b3d131cdc47579204a3583942c4106b483&w=1060"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
